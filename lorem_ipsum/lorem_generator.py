@@ -32,11 +32,12 @@ def generate_text():
     text_length = random.randint(3, 7)  # random text length between 3 and 7 paragraphs
     return '\n'.join(generate_paragraph() for _ in range(text_length))
 
-# Test the functions
-print(generate_word())
-print()
-print(generate_sentence())
-print()
-print(generate_paragraph())
-print()
-print(generate_text())
+if __name__ == '__main__':
+    # Test the functions
+    print(generate_word())
+    print()
+    print(generate_sentence())
+    print()
+    print(generate_paragraph())
+    print()
+    print(generate_text())
