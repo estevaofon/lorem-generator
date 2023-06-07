@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "lorem-aoponto"
+version = "0.1.0"
+description = "Project to create Lorem Ipsum text"
+authors = ["Estevao <estevaopfon@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "lorem_ipsum"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.scripts]
+lorem_ipsum = 'lorem_ipsum:main'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
